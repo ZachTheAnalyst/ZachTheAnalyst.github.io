@@ -172,10 +172,19 @@ section {
 /* ------------------------- */
 /* Typewriter effect */
 /* ------------------------- */
-#type-text, #type-content, #cursor {
-    display: block; /* allow wrapping on small screens */
+#type-text {
+    display: inline-block; /* container for text and cursor */
+}
+
+#type-content {
+    display: inline; /* typed text stays inline */
+}
+
+#cursor {
+    display: inline; /* cursor stays inline with text */
     color: white;
 }
+
 
 .blink {
     animation: blink 1s step-start infinite;
