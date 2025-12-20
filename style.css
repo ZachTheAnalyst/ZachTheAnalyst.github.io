@@ -361,12 +361,17 @@ p { font-size: 1.2em; line-height: 1.6; max-width: 70%; color: rgb(184, 174, 218
     }
 
     /* Typewriter text */
-    #type-text, #type-content, #cursor {
-        display: block;
+    #type-text {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    #type-content,
+    #cursor {
+        display: inline;   /* keep inline */
         font-size: 1.2em;
         line-height: 1.3;
-        width: 100%;
-        text-align: center;
     }
 
     /* Resume button */
