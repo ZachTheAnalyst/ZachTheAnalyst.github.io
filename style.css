@@ -34,6 +34,7 @@ html { scroll-behavior: smooth; }
     --font-head: 'Space Grotesk', sans-serif;  /* headings — geometric, confident */
     --font-body: 'Inter', sans-serif;          /* body — clean and readable */
     --radius:    10px;       /* default border-radius for cards and buttons */
+    --silkworm:  #F5F0E8;    /* silkworm — warm off-white used as a highlight accent */
 }
 
 /* Base body styles — everything inherits the dark bg and body font */
@@ -80,11 +81,11 @@ body {
     font-family: var(--font-head);
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--silkworm);  /* silkworm monogram — warm against the dark sidebar */
     letter-spacing: 0.05em;
     margin-bottom: 3rem;
     width: 44px; height: 44px;
-    border: 2px solid var(--accent);
+    border: 2px solid var(--silkworm);
     border-radius: 8px;
     display: flex; align-items: center; justify-content: center;
 }
@@ -202,10 +203,10 @@ section {
     font-family: var(--font-head);
     font-size: 2rem;
     font-weight: 700;
-    color: var(--text);
+    color: var(--silkworm);  /* silkworm section titles — warm against dark sections */
     margin-bottom: 3rem;
     padding-bottom: 0.75rem;
-    border-bottom: 2px solid var(--accent);
+    border-bottom: 2px solid var(--accent);  /* blue underline stays */
     display: inline-block;   /* border-bottom only as wide as the text */
 }
 
@@ -239,7 +240,7 @@ section {
     font-size: clamp(2.4rem, 5vw, 4rem);
     font-weight: 700;
     line-height: 1.15;
-    color: var(--text);
+    color: var(--silkworm);  /* silkworm — warm contrast against the dark bg, softer than pure white */
     margin-bottom: 1.5rem;
     display: block;
     min-height: 1.2em;    /* prevents layout shift while text types in */
@@ -523,7 +524,7 @@ section {
 /*
     Simple one-liner at the very bottom.
     Offset by sidebar width on desktop, full width on mobile.
-    The silk worm lives here — patient, methodical, builds
+    silk worm lives here — patient, methodical, builds
     something valuable thread by thread. That's the whole vibe.
 */
 #footer {
