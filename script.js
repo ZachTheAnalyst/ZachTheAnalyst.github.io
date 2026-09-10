@@ -69,9 +69,9 @@ document.addEventListener("DOMContentLoaded", () => {
     //   400ms pause before typing the next phrase
     // ----------------------------------------------------------
     const phrases = [
-        "I'm Zach — Math & Data Science Student.",
-        "Cybersecurity Analyst & Researcher.",
-        "Building toward quantitative finance."
+        "I'm Zach — Aspiring Quantitative Trader.",
+        "Published Researcher on SSRN.",
+        "Cybersecurity Analyst & Math Student."
     ];
 
     const typeContent = document.getElementById("type-content");
